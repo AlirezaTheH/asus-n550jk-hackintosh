@@ -21,7 +21,7 @@ This is more of a compilation of information and configs from various repositori
 - [x] Intel® HD Graphics 4600
 - [x] HDMI Output (Not tested)
 - [x] Mini Display Port Output (Not tested)
-- [x] Audio Internal Speakers
+- [x] Internal Speakers
 - [x] Internal microphone
 - [x] ComboJack Headphones
 - [x] HDMI Audio Output (Not tested)
