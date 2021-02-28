@@ -88,7 +88,7 @@ Congratulations! You have successfully booted and installed macOS. At this point
 
 ## Issues
 ### Audio
-The headphone jack is buggy. External microphones aren't detected. I've tried 3, 20, 27, 28 for `layout-id` but none of those works. I might fork [ComboJack](https://github.com/lvs1974/ComboJack) in the future and fix it myself or give a try to [AppleALC-ALCPlugFix](https://github.com/athlonreg/AppleALC-ALCPlugFix) or [ALCPlugFix](https://github.com/Menchen/ALCPlugFix).
+The headphone jack is buggy. External microphones aren't detected. I've tried 3, 20, 27, 28 for `layout-id` but none of those works. Then I thought that there is something wrong with AppleHDA patching and tried to use [this guide](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/) and patch it myself, but that made no difference. I also tried [ALCPlugFix](https://github.com/Sniki/ALCPlugFix) but that didn't work too. Might fork [ComboJack](https://github.com/lvs1974/ComboJack) in the future and fix it myself.
 
 ### Card Reader
 Card reader is not detected. I've tried [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx), but no luck. maybe try [this](https://www.noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/) later.
