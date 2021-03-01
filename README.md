@@ -24,23 +24,25 @@ This is more of a compilation of information and configs from various repositori
 - [x] Internal Speakers
 - [x] Internal microphone
 - [x] ComboJack Headphones
+- [x] ComboJack Microphone
 - [x] HDMI Audio Output (Not tested)
 - [x] Mini DisplayPort Audio Output (Not tested)
 - [x] Sleep / Wake also with lid
 - [x] PS2 Touchpad with gesture
 - [x] Keyboard (PS2-Internal) with backlight
-- [x] F3 and F4 Backlight Keys
-- [x] F5 and F6 Brightness Keys
-- [x] F10, F11 and F12 Audio Keys
+- [x] F2 Sleep key
+- [x] F3 and F4 Backlight keys
+- [x] F5 and F6 Brightness keys
+- [x] F9 Touchpad key
+- [x] F10, F11 and F12 Audio keys
 - [x] Wi-Fi and Bluetooth
 - [x] Ethernet
-- [x] WebCam (USB-Internal)
+- [x] WebCam
 - [x] Touch Screen
 - [x] All Sensors
 - [x] ACPI Battery
 - [x] NVRAM (Native)
 - [x] Recovery (macOS) boot from OpenCore
-- [ ] ComboJack Microphone
 - [ ] Micro SD Card Reader (USB-Internal)
 - [ ] NVIDIA GeForce GTX 850M
 
@@ -78,17 +80,17 @@ After having created the installer USB flash drive, you are ready to install mac
 Congratulations! You have successfully booted and installed macOS. At this point, you just need to follow next final steps to complete your installation.
 
 #### BIOS Setting
-- In order to get full screen boot resolution, you must replace CsmVideo with HermitCsmVideo developed by Hermit Crab Labs. for this purpose just follow below steps:
-	1. Extract your current BIOS using [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/) > Save.
-	2. Open extracted BIOS.rom from previous step using [UEFITool](https://github.com/LongSoft/UEFITool)
-	3. Search for CsmVideo and replace the body with HermitCsmVideo.fbd and save.
-	4. Open the new BIOS.rom file with AMU and Flash it to your ROM.
+- In order to get full screen boot resolution, you must replace `CsmVideo` with `HermitCsmVideo` developed by Hermit Crab Labs. for this purpose just follow below steps:
+	1. Extract your current BIOS using [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/) > `Save`.
+	2. Open extracted `[BIOS].rom` from previous step using [UEFITool](https://github.com/LongSoft/UEFITool)
+	3. Search for `CsmVideo` and replace the body with [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
+	4. Open the new `BIOS.rom` file with AMU and `Flash` it to your ROM.
 - For fixing CFG lock follow [this](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) section from [dortania](https://github.com/dortania)'s guide
 
 
 ## Issues
 ### Audio
-The headphone jack is buggy. External microphones aren't detected. I've tried 3, 20, 27, 28 for `layout-id` but none of those works. Then I thought that there is something wrong with AppleHDA patching and tried to use [this guide](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/) and patch it myself, but that made no difference. I also tried [ALCPlugFix](https://github.com/Sniki/ALCPlugFix) but that didn't work too. Might fork [ComboJack](https://github.com/lvs1974/ComboJack) in the future and fix it myself.
+The ComboJack jack is buggy. External microphone is detected, but by default it isn't active and also not auto switchable. So you need select it manually in  **System Preferences** and replug it to make it work! I've tried `3`, `20`, `27`, `28` for `layout-id` but `29` was the best. Then I thought that there is something wrong with AppleHDA patching and tried to use [this guide](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/) and patched it myself, but that made no difference. I also tried to modify [ALCPlugFix](https://github.com/Sniki/ALCPlugFix), [ComboJack](https://github.com/lvs1974/ComboJack) and [CodecCommander](https://github.com/RehabMan/EAPD-Codec-Commander) for ALC668 but none of them worked. 
 
 ### Card Reader
 Card reader is not detected. I've tried [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx), but no luck. maybe try [this](https://www.noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/) later.
