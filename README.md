@@ -84,13 +84,13 @@ Congratulations! You have successfully booted and installed macOS. At this point
 	1. Extract your current BIOS using [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/) > `Save`.
 	2. Open extracted `[BIOS].rom` from previous step using [UEFITool](https://github.com/LongSoft/UEFITool)
 	3. Search for `CsmVideo` and replace the body with [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
-	4. Open the new `BIOS.rom` file with AMU and `Flash` it to your ROM.
+	4. Open the new `[BIOS].rom` file with AMU and `Flash` it to your ROM.
 - For fixing CFG lock follow [this](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) section from [dortania](https://github.com/dortania)'s guide
 
 
 ## Issues
 ### Audio
-The ComboJack jack is buggy. External microphone is detected, but by default it isn't active and also not auto switchable. So you need select it manually in  **System Preferences** and replug it to make it work! I've tried `3`, `20`, `27`, `28` for `layout-id` but `29` was the best. Then I thought that there is something wrong with AppleHDA patching and tried to use [this guide](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/) and patched it myself, but that made no difference. I also tried to modify [ALCPlugFix](https://github.com/Sniki/ALCPlugFix), [ComboJack](https://github.com/lvs1974/ComboJack) and [CodecCommander](https://github.com/RehabMan/EAPD-Codec-Commander) for ALC668 but none of them worked. 
+The ComboJack jack is buggy. External microphone is detected, but by default it isn't active and also not auto switchable. So you need to select it manually in  **System Preferences** and replug it to make it work! I've tried `3`, `20`, `27`, `28` for `layout-id` but `29` was the best. Then I thought that there is something wrong with AppleHDA patching and tried to use [this guide](https://osxlatitude.com/forums/topic/1946-complete-applehda-patching-guide/) and add a custom codec to [AppleALC](https://github.com/acidanthera/AppleALC), but that made no difference. I also tried to modify [ALCPlugFix](https://github.com/Sniki/ALCPlugFix), [ComboJack](https://github.com/lvs1974/ComboJack) and [CodecCommander](https://github.com/RehabMan/EAPD-Codec-Commander) for ALC668 but none of them seems to be worked.
 
 ### Card Reader
 Card reader is not detected. I've tried [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx), but no luck. maybe try [this](https://www.noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/) later.
