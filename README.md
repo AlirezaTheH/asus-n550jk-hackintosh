@@ -105,7 +105,7 @@ Will never work because of Nvidia Optimus and Apple completely dropped Nvidia su
 - [Pike R. Alpha](https://github.com/Piker-Alpha), [onemanOSX](https://github.com/onemanosx) and [Acidanthera](https://github.com/acidanthera) for [CPUFriendDataProvider](https://www.olarila.com/topic/5693-guide-ssdt-with-pikes-pm-script-and-use-with-cpufriend/)
 - [VoodooI2C Team](https://github.com/VoodooI2C/VoodooI2C/graphs/contributors) for [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [dortania](https://github.com/dortania) for [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
-- [RehabMan](https://github.com/RehabMan) for [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID) and [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/src/master/)
+- [RehabMan](https://github.com/RehabMan) for [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 - [LynXNU](https://github.com/lynxnu) for [AthBluetoothFirmware](https://github.com/lynxnu/AthBluetoothFirmware)
 - [pico joe](https://www.insanelymac.com/forum/profile/1113740-pico-joe/) for [AthWifi](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
 - [Hiep Bao Le](https://github.com/hieplpvip) for [AsusSMC](https://github.com/hieplpvip/AsusSMC)
