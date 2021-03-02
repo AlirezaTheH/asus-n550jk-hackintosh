@@ -26,9 +26,9 @@ This is more of a compilation of information and configs from various repositori
 - [x] Combo Jack Microphone
 - [x] HDMI Audio Output (Not tested)
 - [x] Mini DisplayPort Audio Output (Not tested)
-- [x] Sleep / Wake also with lid
-- [x] PS2 Touchpad with gesture
-- [x] Keyboard (PS2-Internal) with backlight
+- [x] Sleep and Wake also with lid
+- [x] Touchpad with gesture
+- [x] Keyboard with backlight
 - [x] F2 Sleep key
 - [x] F3 and F4 Backlight keys
 - [x] F5 and F6 Brightness keys
@@ -41,8 +41,8 @@ This is more of a compilation of information and configs from various repositori
 - [x] All Sensors
 - [x] Battery
 - [x] NVRAM
-- [x] Recovery (macOS) boot from OpenCore
-- [ ] Micro SD Card Reader (USB-Internal)
+- [x] macOS Recovery
+- [ ] Card Reader
 - [ ] NVIDIA GeForce GTX 850M
 
 
