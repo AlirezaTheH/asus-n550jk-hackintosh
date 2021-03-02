@@ -24,7 +24,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disables Dedicated Graphics.aml</string>
+				<string>Disables Dedicated Graphics</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
