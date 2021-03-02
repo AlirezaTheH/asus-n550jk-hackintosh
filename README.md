@@ -10,7 +10,6 @@ A collection of all resources needed to run macOS on a Asus N550JK
 - **Memory**: 16 GB
 - **Wi-Fi and Bluetooth**: Qualcomm Atheros AR9485
 - **Touchpad**: Elan
-- **BIOS Version**: N550JK.208
 - **Bootloader**: [OpenCore](https://github.com/acidanthera/OpenCorePkg)
 
 ## Overview
