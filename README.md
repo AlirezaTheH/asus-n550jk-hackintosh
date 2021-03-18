@@ -112,6 +112,7 @@ from [dortania](https://github.com/dortania)'s guide
 
 
 ## Issues
+
 ### Audio
 Combo Jack is buggy. External microphone is detected, but by default it isn't 
 active and also not auto switchable. So you need to select it manually in 
@@ -128,7 +129,7 @@ but none of them seems to be worked.
 
 ### Card Reader
 Card Reader is not detected. I've tried 
-[Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx), but no luck. maybe try 
+[Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx), but no luck. Maybe try 
 [this](https://www.noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/) 
 later.
 
