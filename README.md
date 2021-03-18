@@ -1,7 +1,7 @@
 # Asus N550JK Hackintosh
 A collection of all resources needed to run macOS on a Asus N550JK
 
-# Specifications
+## Specifications
 - **Processor**: Intel i7 4710HQ                    
 - **Integrated Graphics**: Intel® HD Graphics 4600
 - **Dedicated Graphics**: NVIDIA GeForce GTX 850M (Disabled)
