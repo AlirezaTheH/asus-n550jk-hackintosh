@@ -88,7 +88,7 @@ macOS on your laptop. Then you can follow
 [this section](https://dortania.github.io/OpenCore-Install-Guide/installation/installation-process.html) 
 from [dortania](https://github.com/dortania)'s guide to install your macOS.
 
-### Post Installation
+### After Installation
 Congratulations! You have successfully booted and installed macOS. At this 
 point, you just need to follow next final steps to complete your installation.
 
