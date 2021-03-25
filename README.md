@@ -21,13 +21,13 @@ specific Asus N550JK configuration.
 
 ## Current Status
 - [x] Intel® HD Graphics 4600
-- [x] HDMI Output (Not tested)
+- [x] HDMI Output
 - [x] Mini Display Port Output (Not tested)
 - [x] Internal Speakers
 - [x] Internal microphone
 - [x] Combo Jack Headphones
 - [x] Combo Jack Microphone
-- [x] HDMI Audio Output (Not tested)
+- [x] HDMI Audio Output
 - [x] Mini DisplayPort Audio Output (Not tested)
 - [x] Sleep and Wake also with lid
 - [x] Touchpad with gesture
