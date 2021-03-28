@@ -138,7 +138,7 @@ Will never work because of Nvidia Optimus and Apple completely dropped Nvidia
 support beginning with Mojave. Thus it's completely disabled to save power.
 
 
-## Credits
+## Acknowledgements
 - [Apple](https://www.apple.com) for macOS and Xcode
 - [Acidanthera](https://github.com/acidanthera) for 
 [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), 
