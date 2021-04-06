@@ -159,8 +159,8 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
 - [RehabMan](https://github.com/RehabMan) for 
 [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
-- [LynXNU](https://github.com/lynxnu) for 
-[AthBluetoothFirmware](https://github.com/lynxnu/AthBluetoothFirmware)
+- [zxystd](https://github.com/zxystd) for 
+[AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware)
 - [pico joe](https://www.insanelymac.com/forum/profile/1113740-pico-joe/) for 
 [AthWifi](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
 - [Hiep Bao Le](https://github.com/hieplpvip) for 
