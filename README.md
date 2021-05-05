@@ -141,38 +141,40 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 ## Acknowledgements
 - [Apple](https://www.apple.com) for macOS and Xcode
 - [Acidanthera](https://github.com/acidanthera) for 
-[OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), 
-[Lilu](https://github.com/acidanthera/Lilu), 
-[AppleALC](https://github.com/acidanthera/AppleALC), 
-[VirtualSMC](https://github.com/acidanthera/VirtualSMC), 
-[VoodooPS2](https://github.com/acidanthera/VoodooPS2), 
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen), 
-[CPUFriend](https://github.com/acidanthera/CPUFriend) and 
-[MaciASL](https://github.com/acidanthera/MaciASL)
+  [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg), 
+  [Lilu](https://github.com/acidanthera/Lilu), 
+  [AppleALC](https://github.com/acidanthera/AppleALC), 
+  [VirtualSMC](https://github.com/acidanthera/VirtualSMC), 
+  [VoodooPS2](https://github.com/acidanthera/VoodooPS2), 
+  [WhateverGreen](https://github.com/acidanthera/WhateverGreen), 
+  [CPUFriend](https://github.com/acidanthera/CPUFriend) and 
+  [MaciASL](https://github.com/acidanthera/MaciASL)
 - [Pike R. Alpha](https://github.com/Piker-Alpha), 
-[onemanOSX](https://github.com/onemanosx) and 
-[Acidanthera](https://github.com/acidanthera) for 
-[CPUFriendDataProvider](https://www.olarila.com/topic/5693-guide-ssdt-with-pikes-pm-script-and-use-with-cpufriend/)
+  [onemanOSX](https://github.com/onemanosx) and 
+  [Acidanthera](https://github.com/acidanthera) for 
+  [CPUFriendDataProvider](https://www.olarila.com/topic/5693-guide-ssdt-with-pikes-pm-script-and-use-with-cpufriend/)
 - [VoodooI2C Team](https://github.com/VoodooI2C/VoodooI2C/graphs/contributors) for 
-[VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
+  [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [dortania](https://github.com/dortania) for 
-[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
+  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
 - [RehabMan](https://github.com/RehabMan) for 
-[FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
+  [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 - [zxystd](https://github.com/zxystd) for 
-[AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware)
+  [AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware)
 - [pico joe](https://www.insanelymac.com/forum/profile/1113740-pico-joe/) for 
-[AthWifi](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
+  [AthWifi](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
 - [Hiep Bao Le](https://github.com/hieplpvip) for 
-[AsusSMC](https://github.com/hieplpvip/AsusSMC)
+  [AsusSMC](https://github.com/hieplpvip/AsusSMC)
 - [ami](https://www.ami.com) for 
-[AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
+  [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
 - [LongSoft](https://github.com/LongSoft) for 
-[UEFITool](https://github.com/LongSoft/UEFITool)
+  [UEFITool](https://github.com/LongSoft/UEFITool)
 - [CorpNewt](https://github.com/corpnewt) for 
-[ProperTree](https://github.com/corpnewt/ProperTree)
+  [ProperTree](https://github.com/corpnewt/ProperTree)
 - [headzake](https://github.com/headkaze) for 
-[Hackintool](https://github.com/headkaze/Hackintool)
+  [Hackintool](https://github.com/headkaze/Hackintool)
 - [fatcatsoftware](https://www.fatcatsoftware.com) for 
-[Plist Edit Pro](https://www.fatcatsoftware.com/plisteditpro/)
+  [Plist Edit Pro](https://www.fatcatsoftware.com/plisteditpro/)
+- [mackie100projects](https://mackie100projects.altervista.org) for 
+  [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/)
 - Hermit Crab Labs for HermitCsmVideo
