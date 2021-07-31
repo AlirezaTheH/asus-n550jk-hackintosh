@@ -24,7 +24,7 @@ specific Asus N550JK configuration.
 - [x] HDMI Output
 - [x] Mini Display Port Output (Not tested)
 - [x] Internal Speakers
-- [x] Internal microphone
+- [x] Internal Microphone
 - [x] Combo Jack Headphones
 - [x] Combo Jack Microphone
 - [x] HDMI Audio Output
