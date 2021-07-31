@@ -4,7 +4,7 @@ A collection of all resources needed to run macOS on a Asus N550JK
 ## Specifications
 - **Processor**: Intel i7 4710HQ                    
 - **Integrated Graphics**: Intel® HD Graphics 4600
-- **Dedicated Graphics**: NVIDIA GeForce GTX 850M (Disabled)
+- **Dedicated Graphics**: NVIDIA GeForce GTX 850M
 - **Ethernet**: Realtek 8111G
 - **Audio**: Realtek ALC668
 - **Memory**: 16 GB
@@ -30,9 +30,9 @@ specific Asus N550JK configuration.
 - [x] HDMI Audio Output
 - [x] Mini DisplayPort Audio Output (Not tested)
 - [x] Sleep and Wake also with lid
-- [x] Touchpad with gesture
+- [x] Touchpad with gestures
 - [x] Keyboard with backlight
-- [x] F2 Sleep key
+- [x] F1 Sleep key
 - [x] F3 and F4 Backlight keys
 - [x] F5 and F6 Brightness keys
 - [x] F9 Touchpad key
@@ -46,7 +46,7 @@ specific Asus N550JK configuration.
 - [x] NVRAM
 - [x] macOS Recovery
 - [ ] Card Reader
-- [ ] NVIDIA GeForce GTX 850M
+- [ ] NVIDIA GeForce GTX 850M (Disabled)
 
 
 ## Installation
