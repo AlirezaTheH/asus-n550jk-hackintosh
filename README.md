@@ -60,10 +60,15 @@ from [dortania](https://github.com/dortania)'s guide to create your bootable
 USB.
 
 ### Configuring EFI
-Clone this repository to get the base EFI folder as well as all additional kexts 
-and patches. If your hardware differs with mine you should modify EFI folder for 
-your exact hardware configuration. Once everything is configured properly, copy 
-the folder into the EFI partition you have mounted in the previous step.
+Download 
+[latest release EFI](https://github.com/alirezah320/asus-n550jk-hackintosh/releases/latest)
+to get the base EFI folder as well as all additional kexts and patches. If your 
+hardware differs with mine you should modify EFI folder for your exact hardware 
+configuration. If you don't know how to do that you should probably learn more 
+about hackintoshing. you can read 
+[Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) 
+for start. Once everything is configured properly, copy the folder into the EFI 
+partition you have mounted in the previous step.
 
 ### Before Installation
 #### BIOS Setting
@@ -96,16 +101,24 @@ point, you just need to follow next final steps to complete your installation.
 - In order to get full screen boot resolution, you must replace `CsmVideo` with 
 `HermitCsmVideo` developed by Hermit Crab Labs. for this purpose just follow 
 below steps:
-	1. Extract your current BIOS by opening
+  1. Download
+     [latest release BIOS](https://github.com/alirezah320/asus-n550jk-hackintosh/releases/latest)
+     to get base requirements. At this point you can just open 
+     [`N550JKAS.208-modified.rom`](https://github.com/alirezah320/asus-n550jk-hackintosh/blob/main/BIOS/N550JKAS.208-modified.rom)
+     with [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
+     ,`Flash` it to your ROM, and skip next steps. But we highly
+     recommend to follow next steps and modify your own BIOS.
+	2. Extract your current BIOS by opening
 	   [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
 	   and pressing `Save`.
-	2. Open extracted `[BIOS].rom` from previous step using 
+	3. Open extracted `[BIOS].rom` from previous step using 
 	   [UEFITool](https://github.com/LongSoft/UEFITool)
-	3. Search for `CsmVideo` and replace the body with 
+	4. Search for `CsmVideo` and replace the body with 
 	   [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
-	4. Open the new `[BIOS].rom` file with 
+	5. Open the new `[BIOS].rom` file with 
 	   [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/) 
 	   and `Flash` it to your ROM.
+     
 - For fixing CFG lock follow 
 [this section](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) 
 from [dortania](https://github.com/dortania)'s guide
