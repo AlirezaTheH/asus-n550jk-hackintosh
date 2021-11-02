@@ -8,7 +8,7 @@ A collection of all resources needed to run macOS on a Asus N550JK
 - **Ethernet**: Realtek 8111G
 - **Audio**: Realtek ALC668
 - **Memory**: 16 GB
-- **Wi-Fi and Bluetooth**: Qualcomm Atheros AR9485
+- **Wi-Fi and Bluetooth**: Intel(R) Dual Band Wireless N 7260
 - **Touchpad**: Elan
 - **Bootloader**: [OpenCore](https://github.com/acidanthera/OpenCorePkg)
 
@@ -160,7 +160,8 @@ support beginning with Mojave. Thus it's completely disabled to save power.
   [VirtualSMC](https://github.com/acidanthera/VirtualSMC), 
   [VoodooPS2](https://github.com/acidanthera/VoodooPS2), 
   [WhateverGreen](https://github.com/acidanthera/WhateverGreen), 
-  [CPUFriend](https://github.com/acidanthera/CPUFriend) and 
+  [CPUFriend](https://github.com/acidanthera/CPUFriend),
+  [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) and
   [MaciASL](https://github.com/acidanthera/MaciASL)
 - [Pike R. Alpha](https://github.com/Piker-Alpha), 
   [onemanOSX](https://github.com/onemanosx) and 
@@ -172,10 +173,9 @@ support beginning with Mojave. Thus it's completely disabled to save power.
   [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
 - [RehabMan](https://github.com/RehabMan) for 
   [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
-- [zxystd](https://github.com/zxystd) for 
-  [AthBluetoothFirmware](https://github.com/zxystd/AthBluetoothFirmware)
-- [pico joe](https://www.insanelymac.com/forum/profile/1113740-pico-joe/) for 
-  [AthWifi](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
+- [OpenIntelWireless](https://github.com/OpenIntelWireless) for 
+  [AthBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and
+  [itlwm](https://github.com/OpenIntelWireless/itlwm)
 - [Hiep Bao Le](https://github.com/hieplpvip) for 
   [AsusSMC](https://github.com/hieplpvip/AsusSMC)
 - [ami](https://www.ami.com) for 
