@@ -170,9 +170,7 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 - [VoodooI2C Team](https://github.com/VoodooI2C/VoodooI2C/graphs/contributors) for 
   [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [dortania](https://github.com/dortania) for 
-  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)  
-- [RehabMan](https://github.com/RehabMan) for 
-  [FakePCIID](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
+  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [OpenIntelWireless](https://github.com/OpenIntelWireless) for 
   [AthBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and
   [itlwm](https://github.com/OpenIntelWireless/itlwm)
