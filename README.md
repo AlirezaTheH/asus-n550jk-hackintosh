@@ -123,6 +123,11 @@ below steps:
 [this section](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) 
 from [dortania](https://github.com/dortania)'s guide
 
+#### Wi-Fi Setting
+Download and install [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 
+which is Intel Wi-Fi client for 
+[itlwm](https://github.com/OpenIntelWireless/itlwm)
+
 
 ## Issues
 
@@ -172,8 +177,9 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 - [dortania](https://github.com/dortania) for 
   [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [OpenIntelWireless](https://github.com/OpenIntelWireless) for 
-  [AthBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) and
-  [itlwm](https://github.com/OpenIntelWireless/itlwm)
+  [AthBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware),
+  [itlwm](https://github.com/OpenIntelWireless/itlwm) and
+  [HeliPort](https://github.com/OpenIntelWireless/HeliPort)
 - [Hiep Bao Le](https://github.com/hieplpvip) for 
   [AsusSMC](https://github.com/hieplpvip/AsusSMC)
 - [ami](https://www.ami.com) for 
