@@ -126,7 +126,7 @@ from [dortania](https://github.com/dortania)'s guide
 #### Wi-Fi Setting
 Download and install [HeliPort](https://github.com/OpenIntelWireless/HeliPort) 
 which is Intel Wi-Fi client for 
-[itlwm](https://github.com/OpenIntelWireless/itlwm)
+[itlwm](https://github.com/OpenIntelWireless/itlwm).
 
 
 ## Issues
