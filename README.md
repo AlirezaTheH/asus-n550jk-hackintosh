@@ -1,38 +1,12 @@
-<style>  
-  h1 {
-    text-align: center;
-  }
-  .image-container .laptop-image, .image-container {
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  .image-container {
-    position: relative;
-    transition: transform 500ms;
-  }
-  .image-container .desktop-bg-image {
-    max-width: 320px;
-    margin: auto;
-    position: absolute;
-    top: 28px;
-    left: 90px;
-    transition: opacity 500ms;
-  }
-  .image-container:hover {
-    transform: scale(1.02);
-  }
-</style>
-
-<div class="image-container">
-<img class="laptop-image"
-     src="./images/asus-n550jk.png">
-<img class="desktop-bg-image"
-     src="./images/desktop-light.png">
+<div style="position: relative;max-width: 500px;margin: auto;">
+<img src="./images/asus-n550jk.png"
+     style="max-width:500px;margin: auto;">
+<img src="./images/desktop-light.png"
+     style="max-width: 320px;margin: auto;position: absolute;top: 28px;left: 90px">
 </div>
 
-# Asus N550JK Hackintosh
 <div align="center">
+<h1>Asus N550JK Hackintosh</h1>
 
 [![Bootloader](https://badgen.net/badge/Bootloader/OpenCore/cyan?icon=terminal)](https://github.com/acidanthera/OpenCorePkg)
 [![macOS](https://badgen.net/badge/macOS/Monterey/purple?icon=apple)](https://www.apple.com/macos/monterey/)
