@@ -1,4 +1,45 @@
+<style>  
+  h1 {
+    text-align: center;
+  }
+  .image-container .laptop-image, .image-container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .image-container {
+    position: relative;
+    transition: transform 500ms;
+  }
+  .image-container .desktop-bg-image {
+    max-width: 320px;
+    margin: auto;
+    position: absolute;
+    top: 28px;
+    left: 90px;
+    transition: opacity 500ms;
+  }
+  .image-container:hover {
+    transform: scale(1.02);
+  }
+</style>
+
+<div class="image-container">
+<img class="laptop-image"
+     src="./images/asus-n550jk.png">
+<img class="desktop-bg-image"
+     src="./images/desktop-light.png">
+</div>
+
 # Asus N550JK Hackintosh
+<div align="center">
+
+[![Bootloader](https://badgen.net/badge/Bootloader/OpenCore/cyan?icon=terminal)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://badgen.net/badge/macOS/Monterey/purple?icon=apple)](https://www.apple.com/macos/monterey/)
+
+</div>
+
+
 A collection of all resources needed to run macOS on a Asus N550JK
 
 ## Specifications
@@ -10,7 +51,6 @@ A collection of all resources needed to run macOS on a Asus N550JK
 - **Memory**: 16 GB
 - **Wi-Fi and Bluetooth**: Intel(R) Dual Band Wireless N 7260
 - **Touchpad**: Elan
-- **Bootloader**: [OpenCore](https://github.com/acidanthera/OpenCorePkg)
 
 ## Overview
 This is more of a compilation of information and configs from various 
