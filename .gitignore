@@ -1,2 +1,14 @@
 # macOS
 .DS_Store
+
+#PyCharm
+.idea
+
+# Virtualenv
+venv
+
+# Python cache
+__pycache__
+
+# Compilde python files
+*.pyc
