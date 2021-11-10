@@ -8,7 +8,7 @@
 </div>
 
 
-A collection of all resources needed to run macOS on a Asus N550JK
+A collection of all resources needed to run macOS on an Asus N550JK
 
 ## Specifications
 - **Processor**: Intel i7 4710HQ
