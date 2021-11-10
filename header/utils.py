@@ -1,8 +1,10 @@
 import base64
+import io
 from os.path import join
 
 import jinja2
 import yaml
+from PIL import Image
 
 
 def render_template(path: str, data: dict) -> str:
@@ -60,12 +62,14 @@ def write_svg(name: str, path: str) -> None:
         Path to write HTML to
     """
     data = read_data(name)
-    for image, filename in data.items():
-        encoded = base64.b64encode(open(join('header',
-                                             'images',
-                                             filename),
-                                        'rb').read()).decode('ascii')
-        data[image] = f'data:image/png;base64,{encoded}'
+    for image_name, image_data in data.items():
+        image = Image.open(join('header', 'images', image_data['filename']))
+        width = image_data['thumbnail_width']
+        image.thumbnail((width, width*image.height/image.width))
+        buffer = io.BytesIO()
+        image.save(buffer, image.format)
+        encoded = base64.b64encode(buffer.getvalue()).decode('ascii')
+        image_data['data'] = f'data:image/png;base64,{encoded}'
 
     svg = render_template(join('header', 'templates', f'{name}.svg'), data)
     with open(join(path, f'{name}.svg'), 'w+') as f:

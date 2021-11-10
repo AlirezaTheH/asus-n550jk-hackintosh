@@ -20,14 +20,14 @@
 					margin: auto;
 					position: absolute;
 					top: 28px;
-					left: 90px;
+					left: 89px;
 				}
 			</style>
 			<div class="image-container">
 				<img class="laptop-image"
-						 src="{{ data['laptop-image'] }}"></img>
+						 src="{{ data['laptop-image']['data'] }}"></img>
 				<img class="desktop-bg-image"
-						 src="{{ data['desktop-bg-image'] }}"></img>
+						 src="{{ data['desktop-bg-image']['data'] }}"></img>
 			</div>
 		</div>
 	</foreignObject>

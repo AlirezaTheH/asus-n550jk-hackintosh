@@ -1,2 +1,6 @@
-laptop-image: asus-n550jk.png
-desktop-bg-image: desktop-light.png
+laptop-image:
+  filename: asus-n550jk.png
+  thumbnail_width: 500
+desktop-bg-image:
+  filename: desktop-light.png
+  thumbnail_width: 320
