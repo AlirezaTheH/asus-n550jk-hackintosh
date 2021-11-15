@@ -95,6 +95,9 @@ partition you have mounted in the previous step.
 - Boot:
 	- Launch PXE OpROM policy **[DISABLED]**
 
+#### OpenCore Setting
+- Enable `AppleXcpmCfgLock`
+
 ### Installation Process
 After having created the installer USB flash drive, you are ready to install
 macOS on your laptop. Then you can follow
