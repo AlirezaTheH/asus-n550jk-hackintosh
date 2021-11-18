@@ -193,6 +193,8 @@ support beginning with Mojave. Thus it's completely disabled to save power.
   [HeliPort](https://github.com/OpenIntelWireless/HeliPort)
 - [Hiep Bao Le](https://github.com/hieplpvip) for
   [AsusSMC](https://github.com/hieplpvip/AsusSMC)
+- [Laura Müller](https://github.com/Mieze) for
+  [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
 - [ami](https://www.ami.com) for
   [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
 - [LongSoft](https://github.com/LongSoft) for
