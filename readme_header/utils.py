@@ -23,7 +23,7 @@ def render_template(path: Path, data: dict) -> str:
     template:
         Rendered template
     """
-    with open(path, 'r+') as f:
+    with open(path, 'r') as f:
         template = f.read()
     template = jinja2.Template(source=template)
     return template.render(data=data)
@@ -43,7 +43,7 @@ def read_data(name: str) -> dict:
     data:
         The data
     """
-    with open(Path(__file__).parent / 'data' / f'{name}.yaml', 'r+') as f:
+    with open(Path(__file__).parent / 'data' / f'{name}.yaml', 'r') as f:
         data = yaml.safe_load(f)
 
     return data
