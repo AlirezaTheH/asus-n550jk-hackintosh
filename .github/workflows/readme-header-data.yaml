@@ -24,12 +24,12 @@ jobs:
         run: python3 readme_header/build.py
 
 
-      - name: Publish header data
+      - name: Commit and push header data
         run: |
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
+          git switch --orphan readme-header-data
           git add images/header-image.svg
-          git checkout -b readme-header-data
           git commit -m "Update header image" --author=\
           "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
           git push -u origin readme-header-data
