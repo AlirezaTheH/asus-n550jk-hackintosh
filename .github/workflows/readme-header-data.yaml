@@ -26,10 +26,18 @@ jobs:
 
       - name: Commit and push header data
         run: |
+          BRANCH=readme-header-data
+
+          # Delete branch if exists
+          if git ls-remote origin $BRANCH | grep $BRANCH;
+          then
+            git push -d origin $BRANCH
+          fi
+
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
-          git switch --orphan readme-header-data
+          git switch --orphan $BRANCH
           git add images/header-image.svg
-          git commit -m "Update header image" --author=\
+          git commit -m "Create header image" --author=\
           "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
-          git push -u origin readme-header-data
+          git push -u origin $BRANCH
