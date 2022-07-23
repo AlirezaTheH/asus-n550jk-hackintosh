@@ -12,3 +12,6 @@ __pycache__
 
 # Compilde python files
 *.pyc
+
+# Generated README header data
+/images

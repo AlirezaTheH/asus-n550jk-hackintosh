@@ -76,5 +76,8 @@ def write_svg(name: str, path: Path) -> None:
     svg = render_template(
         Path(__file__).parent / 'templates' / f'{name}.svg', data
     )
+    if not path.exists():
+        path.mkdir()
+
     with open(path / f'{name}.svg', 'w+') as f:
         f.write(svg)

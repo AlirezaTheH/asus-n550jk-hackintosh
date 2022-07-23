@@ -1,5 +1,5 @@
 <div align="center">
-<img src="blob/readme-header-data/readme_header/images/header-image.svg">
+<img src="blob/readme-header-data/images/header-image.svg">
 <h1>Asus N550JK Hackintosh</h1>
 
 [![Bootloader](https://badgen.net/badge/Bootloader/OpenCore/cyan?icon=terminal)](https://github.com/acidanthera/OpenCorePkg)

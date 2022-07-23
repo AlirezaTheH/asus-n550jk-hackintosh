@@ -1,0 +1,35 @@
+name: readme-header-data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: pip
+
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Create header image
+        run: python3 readme_header/build.py
+
+
+      - name: Publish header data
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add images/header-image.svg
+          git checkout -b readme-header-data
+          git commit -m "Update header image" --author=\
+          "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          git push -u origin readme-header-data
