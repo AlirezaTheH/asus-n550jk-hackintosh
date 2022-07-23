@@ -13,14 +13,14 @@ def render_template(path: str, data: dict) -> str:
 
     Parameters
     ----------
-    path: str
+    path:
         Path to the template
     data:
         The provided data for rendering
 
     Returns
     -------
-    template: str
+    template:
         Rendered template
     """
     with open(path, 'r+') as f:
@@ -35,12 +35,12 @@ def read_data(name: str) -> dict:
 
     Parameters
     ----------
-    name: str
+    name:
         Name of data
 
     Returns
     -------
-    data: dict
+    data:
         The data
     """
     with open(join('header', 'data', f'{name}.yaml'), 'r+') as f:
@@ -55,10 +55,10 @@ def write_svg(name: str, path: str) -> None:
 
     Parameters
     ----------
-    name: str
+    name:
         Name of the HTML
 
-    path: str
+    path:
         Path to write HTML to
     """
     data = read_data(name)
