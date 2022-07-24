@@ -116,19 +116,19 @@ below steps:
      [latest release BIOS](https://github.com/alirezah320/asus-n550jk-hackintosh/releases/latest)
      to get base requirements. At this point you can just open
      [`N550JKAS.208-modified.rom`](https://github.com/alirezah320/asus-n550jk-hackintosh/blob/main/BIOS/N550JKAS.208-modified.rom)
-     with [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
-     ,`Flash` it to your ROM, and skip next steps. But we highly
+     with [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
+     for Aptio 4,`Flash` it to your ROM, and skip next steps. But we highly
      recommend to follow next steps and modify your own BIOS.
 	2. Extract your current BIOS by opening
-	   [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
-	   and pressing `Save`.
+	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
+	   for Aptio 4 and pressing `Save`.
 	3. Open extracted `[BIOS].rom` from previous step using
 	   [UEFITool](https://github.com/LongSoft/UEFITool)
 	4. Search for `CsmVideo` and replace the body with
 	   [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
 	5. Open the new `[BIOS].rom` file with
-	   [AMI Firmware Update (AFU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
-	   and `Flash` it to your ROM.
+	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
+	   for Aptio 4 and `Flash` it to your ROM.
 
 - For fixing CFG lock follow
 [this section](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html)
@@ -196,7 +196,7 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 - [Laura Müller](https://github.com/Mieze) for
   [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
 - [ami](https://www.ami.com) for
-  [AMI Firmware Update (AMU)](https://www.ami.com/products/firmware-tools-and-utilities/bios-uefi-utilities/)
+  [AMI Firmware Update (AMU)](https://www.ami.com/resources/support-other/)
 - [LongSoft](https://github.com/LongSoft) for
   [UEFITool](https://github.com/LongSoft/UEFITool)
 - [CorpNewt](https://github.com/corpnewt) for
