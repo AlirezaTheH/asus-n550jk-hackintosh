@@ -86,7 +86,7 @@ BIOS `N550JKAS.208`
 ### Added
 - Added `ReconnectGraphicsOnConnect` to `UEFI` > `Output`
 - Added `EnableVmx` to `UEFI` > `Quirks`
-  All according to OpenCore `0.7.6` release notes
+All according to OpenCore `0.7.6` release notes
 
 ### Changed
 - OpecCore to `0.7.6`
