@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+OpenCore `0.8.1`
+macOS Monterey `12.4`
+BIOS `N550JKAS.208`
+
+### Changed
+- OpecCore to `0.8.1`
+- macOS to `12.4`
+- AppleALC to `1.7.2`
+- WhateverGreen to `1.5.9`
+- BlueToolFixup to `2.6.2`
+
 
 ## [2.5.0] - 2022-07-24
 OpenCore `0.8.0`
