@@ -25,7 +25,6 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           new-version: ${{ github.event.inputs.new-version }}
-          use-bumpver: true
 
       - name: Create publish files
         run: |
