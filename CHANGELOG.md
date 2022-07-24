@@ -11,7 +11,7 @@ OpenCore `0.8.0`
 macOS Monterey `12.3`
 BIOS `N550JKAS.208`
 
-## Added
+### Added
 - Added `ForceAquantiaEthernet` to `Kernel` > `Quirks` for Aquantia AQtion
   AQC-107s based 10GbE network cards support
 - Added `Misc` > `Serial` section to customise serial port properties
@@ -19,7 +19,7 @@ BIOS `N550JKAS.208`
   recognise customised external serial devices
 All according to OpenCore `0.8.0` release notes
 
-## Changed
+### Changed
 - OpecCore to `0.8.0`
 - macOS to `12.3`
 - AppleALC to `1.7.1`
