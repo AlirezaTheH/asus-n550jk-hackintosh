@@ -1,0 +1,42 @@
+name: publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      new-version:
+        description: New version to be published
+        required: true
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Bump versions
+        uses: alirezatheh/auto-bump-versions@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          new-version: ${{ github.event.inputs.new-version }}
+          use-bumpver: true
+
+      - name: Create publish files
+        run: |
+          REPO=asus-n550jk-hackintosh
+          VERSION=${{ github.event.inputs.new-version }}
+          mkdir dist
+          zip -r dist/$REPO-EFI-$VERSION.zip EFI
+          zip -r dist/$REPO-BIOS-$VERSION.zip BIOS
+
+      - name: GitHub publish
+        uses: alirezatheh/github-auto-publish@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          files: dist/*.zip
