@@ -18,6 +18,10 @@ BIOS `N550JKAS.208`
 - WhateverGreen to `1.5.9`
 - BlueToolFixup to `2.6.2`
 
+### Removed
+- Removed `AllowNvramReset` and `AllowToggleSip` from `Misc` > `Security`
+  according to OpenCore `0.8.1` release notes
+
 
 ## [2.5.0] - 2022-07-24
 OpenCore `0.8.0`
