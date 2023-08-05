@@ -7,6 +7,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+
+## [3.0.0] - 2023-08-05
 OpenCore `0.9.3`
 macOS Ventura `13.5`
 BIOS `N550JKAS.208`
@@ -376,7 +378,8 @@ OpenCore `0.6.6`
 macOS Big Sur `11.2`
 BIOS `N550JKAS.208`
 
-[Unreleased]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v2.7.0...HEAD
+[Unreleased]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v2.7.0...v3.0.0
 [2.7.0]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v2.6.0...v2.7.0
 [2.6.0]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/alirezatheh/asus-n550jk-hackintosh/compare/v2.4.0...v2.5.0
