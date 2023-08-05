@@ -3,12 +3,12 @@
 <h1>Asus N550JK Hackintosh</h1>
 
 [![Bootloader](https://badgen.net/badge/Bootloader/OpenCore/cyan?icon=terminal)](https://github.com/acidanthera/OpenCorePkg)
-[![macOS](https://badgen.net/badge/macOS/Monterey/purple?icon=apple)](https://www.apple.com/macos/monterey/)
+[![macOS](https://badgen.net/badge/macOS/Ventura/orange?icon=apple)](https://www.apple.com/macos/ventura/)
 
 </div>
 
-
 A collection of all resources needed to run macOS on an Asus N550JK
+
 
 ## Specifications
 - **Processor**: Intel i7 4710HQ
@@ -19,6 +19,7 @@ A collection of all resources needed to run macOS on an Asus N550JK
 - **Memory**: 16 GB
 - **Wi-Fi and Bluetooth**: Intel(R) Dual Band Wireless N 7260
 - **Touchpad**: Elan
+
 
 ## Overview
 This is more of a compilation of information and configs from various
@@ -94,9 +95,36 @@ partition you have mounted in the previous step.
 		- XHCI Pre-Boot Mode **[ENABLED]**
 - Boot:
 	- Launch PXE OpROM policy **[DISABLED]**
+> Warning: The following step is completely optional and a little risky.
+> Also you'll need Windows in order to apply it.
+- In order to get full screen boot resolution, you must replace `CsmVideo` with
+`HermitCsmVideo` developed by Hermit Crab Labs. for this purpose just follow
+below steps:
+  1. Download
+     [latest release BIOS](https://github.com/alirezah320/asus-n550jk-hackintosh/releases/latest)
+     to get base requirements. At this point you can just open
+     [`N550JKAS.208-modified.rom`](https://github.com/alirezah320/asus-n550jk-hackintosh/blob/main/BIOS/N550JKAS.208-modified.rom)
+     with [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
+     for Aptio 4, `Flash` it to your ROM, and skip next steps. But we highly
+     recommend to follow next steps and modify your own BIOS.
+	2. Extract your current BIOS by opening
+	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/).
+	   for Aptio 4 and pressing `Save`.
+	3. Open extracted `[BIOS].rom` from previous step using
+	   [UEFITool](https://github.com/LongSoft/UEFITool).
+	4. Search for `CsmVideo` and replace the body with
+	   [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
+	5. Open the new `[BIOS].rom` file with
+	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
+	   for Aptio 4 and `Flash` it to your ROM.
 
 #### OpenCore Setting
-- Enable `AppleXcpmCfgLock`
+1. Rename
+   [`config.plist`](https://github.com/AlirezaTheH/asus-n550jk-hackintosh/blob/main/EFI/OC/config.plist)
+   to `config-backup.plist`.
+2. Rename
+   [`install-config.plist`](https://github.com/AlirezaTheH/asus-n550jk-hackintosh/blob/main/EFI/OC/install-config.plist)
+   to `config.plist`.
 
 ### Installation Process
 After having created the installer USB flash drive, you are ready to install
@@ -109,39 +137,32 @@ Congratulations! You have successfully booted and installed macOS. At this
 point, you just need to follow next final steps to complete your installation.
 
 #### BIOS Setting
-- In order to get full screen boot resolution, you must replace `CsmVideo` with
-`HermitCsmVideo` developed by Hermit Crab Labs. for this purpose just follow
-below steps:
-  1. Download
-     [latest release BIOS](https://github.com/alirezah320/asus-n550jk-hackintosh/releases/latest)
-     to get base requirements. At this point you can just open
-     [`N550JKAS.208-modified.rom`](https://github.com/alirezah320/asus-n550jk-hackintosh/blob/main/BIOS/N550JKAS.208-modified.rom)
-     with [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
-     for Aptio 4,`Flash` it to your ROM, and skip next steps. But we highly
-     recommend to follow next steps and modify your own BIOS.
-	2. Extract your current BIOS by opening
-	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
-	   for Aptio 4 and pressing `Save`.
-	3. Open extracted `[BIOS].rom` from previous step using
-	   [UEFITool](https://github.com/LongSoft/UEFITool)
-	4. Search for `CsmVideo` and replace the body with
-	   [HermitCsmVideo.fbd](BIOS/HermitCsmVideo.fbd) and save.
-	5. Open the new `[BIOS].rom` file with
-	   [AMI Firmware Update (AFU)](https://www.ami.com/resources/support-other/)
-	   for Aptio 4 and `Flash` it to your ROM.
-
-- For fixing CFG lock follow
+For fixing CFG lock follow
 [this section](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html)
-from [dortania](https://github.com/dortania)'s guide
+from [dortania](https://github.com/dortania)'s guide.
+
+#### Root Patching
+Open
+[OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher]),
+then from main menu select `Post-Install Root Patch` > `Start Root Patching`.
+
+#### OpenCore Setting
+1. Rename `config-backup.plist` to `config.plist`.
+2. Rename `config.plist` to `install-config.plist`.
 
 #### Wi-Fi Setting
 Download and install [HeliPort](https://github.com/OpenIntelWireless/HeliPort)
 which is Intel Wi-Fi client for
 [itlwm](https://github.com/OpenIntelWireless/itlwm).
 
+### Updating masOS
+- Before every macOS update, switch the config files like the
+  `OpenCore Setting` step before installation.
+- After every masOS update apply the [`Root Patching`](#root-patching) again
+  and switch the config files like `OpenCore Setting` step after installation.
+
 
 ## Issues
-
 ### Audio
 Combo Jack is buggy. External microphone is detected, but by default it isn't
 active and also not auto switchable. So you need to select it manually in
@@ -177,7 +198,10 @@ support beginning with Mojave. Thus it's completely disabled to save power.
   [VoodooPS2](https://github.com/acidanthera/VoodooPS2),
   [WhateverGreen](https://github.com/acidanthera/WhateverGreen),
   [CPUFriend](https://github.com/acidanthera/CPUFriend),
-  [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM) and
+  [BlueToolFixup](https://github.com/acidanthera/BrcmPatchRAM),
+  [FeatureUnlock](https://github.com/acidanthera/FeatureUnlock),
+  [NVMeFix](https://github.com/acidanthera/NVMeFix),
+  [AMFIPass](https://github.com/dortania/OpenCore-Legacy-Patcher/tree/main/payloads/Kexts/Acidanthera) and
   [MaciASL](https://github.com/acidanthera/MaciASL)
 - [Pike R. Alpha](https://github.com/Piker-Alpha),
   [onemanOSX](https://github.com/onemanosx) and
@@ -186,7 +210,8 @@ support beginning with Mojave. Thus it's completely disabled to save power.
 - [VoodooI2C Team](https://github.com/VoodooI2C/VoodooI2C/graphs/contributors) for
   [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C)
 - [dortania](https://github.com/dortania) for
-  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+  [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) and
+  [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher)
 - [OpenIntelWireless](https://github.com/OpenIntelWireless) for
   [AthBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware),
   [itlwm](https://github.com/OpenIntelWireless/itlwm) and

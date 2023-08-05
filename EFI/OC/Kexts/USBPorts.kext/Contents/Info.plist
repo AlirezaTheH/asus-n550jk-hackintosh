@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro11,4-EHC1</key>
+		<key>MacBookPro14,3-EHC1</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -62,9 +62,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,4</string>
+			<string>MacBookPro14,3</string>
 		</dict>
-		<key>MacBookPro11,4-EHC2</key>
+		<key>MacBookPro14,3-EHC2</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -104,9 +104,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,4</string>
+			<string>MacBookPro14,3</string>
 		</dict>
-		<key>MacBookPro11,4-XHC</key>
+		<key>MacBookPro14,3-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -225,7 +225,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro11,4</string>
+			<string>MacBookPro14,3</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>

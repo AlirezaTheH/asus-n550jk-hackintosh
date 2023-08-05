@@ -7,6 +7,31 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 ## [Unreleased]
+OpenCore `0.9.3`
+macOS Ventura `13.5`
+BIOS `N550JKAS.208`
+
+### Added
+- FeatureUnlock `1.1.5`
+- NVMeFix `1.1.0`
+- AMFIPass `1.3.1`
+
+### Changed
+- OpecCore to `0.9.3`
+- macOS to `13.5`
+- Lilu to `1.6.6`
+- AppleALC to `1.8.3`
+- VirtualSMC to `1.3.2`
+- VoodooPS2 to `2.3.5`
+- WhateverGreen to `1.6.5`
+- CPUFriend to `1.2.7`
+- BlueToolFixup to `2.6.7`
+- VoodooI2C to `2.8`
+- IntelBluetoothFirmware to `2.3.0`
+- itlwm to `2.2.0`
+- Changed OpecCore setting according to OpenCore from `0.8.3` to `0.9.3`
+  release notes
+
 
 ## [2.7.0] - 2022-07-25
 OpenCore `0.8.2`
